@@ -15,7 +15,6 @@ const postsBySubreddit = (state = {}, action) => {
     case INVALIDATE_SUBREDDIT:
     case RECEIVE_POSTS:
     case REQUEST_POSTS:
-      // This may not work haha
       return {
         ...state,
         [action.payload]: posts(state[action.payload], action)
