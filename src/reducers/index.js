@@ -1,7 +1,7 @@
 import {combineReducers} from 'redux'
 import {SELECT_SUBREDDIT, INVALIDATE_SUBREDDIT, REQUEST_POSTS, RECEIVE_POSTS} from '../constants/actionTypes';
 
-const selectedSubreddit = (state = 'reactjs', action) => {
+const selectedSubreddit = (state = {}, action) => {
   switch (action.type) {
     case SELECT_SUBREDDIT:
       return action.payload;
