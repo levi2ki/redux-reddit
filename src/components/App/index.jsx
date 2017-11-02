@@ -5,7 +5,7 @@ import PostsBySubreddit from '../../containers/PostsBySubreddit';
 
 
 export default class App extends React.Component {
-  render() {
+  render () {
     return (
       <div>
         <SubRedditsForm />
